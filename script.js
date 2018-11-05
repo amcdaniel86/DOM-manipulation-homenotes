@@ -59,8 +59,17 @@
 // let clearBody = document.getElementsByTagName('body');
 // clearBody.innerHTML = "";
 
-let button = document.getElementById("add-item-button");
+// let button = document.getElementById("add-item-button");
 
-button.onclick = function(){
-  console.log("add an element to the list");
+// button.onclick = function(){
+//   console.log("add an element to the list");
+// }
+
+let button2 = document.getElementById("add-item-button");
+
+button2.onclick = function(){
+  let text = document.createElement("li");
+  let node = document.createTextNode`J${item number} + item number`;
+  text.appendChild(node);
+  button.appendChild(node);
 }
